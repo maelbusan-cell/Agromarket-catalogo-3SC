@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroMarket — Catálogo de Productos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f5f5; color: #333; padding: 20px; }
+        header { background: #2e7d32; color: white; padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center; }
+        header h1 { font-size: 28px; margin-bottom: 5px; }
+        header p { font-size: 14px; opacity: 0.9; }
+        .filtros { background: white; padding: 15px 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; gap: 15px; align-items: center; flex-wrap: wrap; }
+        .filtros h3 { font-size: 16px; color: #2e7d32; }
+        .filtros button { background: #e8f5e9; border: 1px solid #a5d6a7; color: #2e7d32; padding: 8px 18px; border-radius: 20px; cursor: pointer; font-size: 14px; }
+        .filtros button:hover { background: #2e7d32; color: white; }
+        .catalogo { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+        .producto { background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s; }
+        .producto:hover { transform: translateY(-3px); }
+        .producto img { width: 100%; height: 150px; object-fit: cover; background: #e0e0e0; display: block; }
+        .producto .info { padding: 15px; }
+        .producto .info h3 { font-size: 18px; margin-bottom: 5px; }
+        .producto .info .precio { color: #2e7d32; font-size: 20px; font-weight: bold; }
+        .producto .info .productor { color: #888; font-size: 13px; margin-top: 5px; }
+        .producto .info .categoria { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 3px 10px; border-radius: 12px; font-size: 12px; margin-top: 8px; }
+        footer { text-align: center; margin-top: 40px; color: #888; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌾 AgroMarket</h1>
+    <p>Catálogo de productos — Fresco y directo del campo a tu mesa</p>
+</header>
+
+<div class="filtros">
+    <h3>Filtrar por categoría:</h3>
+    <button>Todas</button>
+    <button>Frutas</button>
+    <button>Hortalizas</button>
+    <button>Granos</button>
+</div>
+
+<div class="catalogo">
+    <div class="producto">
+        <img src="https://via.placeholder.com/300x150/a5d6a7/333?text=Tomate" alt="Tomate">
+        <div class="info">
+            <h3>Tomate Riñón</h3>
+            <p class="precio">$1.20 / lb</p>
+            <p class="productor">Productor: María López</p>
+            <span class="categoria">Hortalizas</span>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/300x150/fff9c4/333?text=Plátano" alt="Plátano">
+        <div class="info">
+            <h3>Plátano Verde</h3>
+            <p class="precio">$0.80 / lb</p>
+            <p class="productor">Productor: Carlos Mendoza</p>
+            <span class="categoria">Frutas</span>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/300x150/c8e6c9/333?text=Lechuga" alt="Lechuga">
+        <div class="info">
+            <h3>Lechuga Crespa</h3>
+            <p class="precio">$0.60 / unidad</p>
+            <p class="productor">Productor: Ana Torres</p>
+            <span class="categoria">Hortalizas</span>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/300x150/d7ccc8/333?text=Arroz" alt="Arroz">
+        <div class="info">
+            <h3>Arroz Oro</h3>
+            <p class="precio">$1.50 / lb</p>
+            <p class="productor">Productor: Cooperativa El Valle</p>
+            <span class="categoria">Granos</span>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/300x150/ffe0b2/333?text=Naranja" alt="Naranja">
+        <div class="info">
+            <h3>Naranja Valencia</h3>
+            <p class="precio">$0.90 / lb</p>
+            <p class="productor">Productor: Pedro Sánchez</p>
+            <span class="categoria">Frutas</span>
+        </div>
+    </div>
+    <div class="producto">
+        <img src="https://via.placeholder.com/300x150/f8bbd0/333?text=Frejol" alt="Frejol">
+        <div class="info">
+            <h3>Frejol Canario</h3>
+            <p class="precio">$1.80 / lb</p>
+            <p class="productor">Productor: Lucía García</p>
+            <span class="categoria">Granos</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>AgroMarket © 2026 — Conectando productores y consumidores</p>
+</footer>
+
+</body>
+</html>
