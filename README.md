@@ -1,6 +1,6 @@
 # AgroMarket — Módulo Catálogo de Productos
 
-**Autor:** [Mayra Buñay]
+**Autor:** Mayra Buñay
 
 AgroMarket es una plataforma web de comercialización de productos agrícolas que conecta productores del campo con consumidores urbanos.
 
